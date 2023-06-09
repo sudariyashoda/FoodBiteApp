@@ -1,0 +1,299 @@
+[
+  {
+    "name":"Burger",
+    "address":"722/W colombo",
+    "delivery_charge": 50,
+    "image":"https://bakeitwithlove.com/wp-content/uploads/2016/05/Teriyaki-Cheeseburger-lg-sq.jpg",
+
+    "hours":{
+      "Sunday":"11:00 AM - 7:00 PM",
+      "Monday":"10:00 AM - 9:00 PM",
+      "Tuesday":"10:00 AM - 10:00 PM",
+      "Wednesday":"10:00 AM - 11:00 PM",
+      "Thursday":"10:00 AM - 10:00 PM",
+      "Friday":"10:00 AM - 11:00 PM",
+      "Saturday":"10:00 AM - 2:00 PM"
+    },
+    "menus": [
+      {
+        "name": "Turkey burger",
+        "price": 10.00,
+        "url": "https://static01.nyt.com/images/2021/07/21/dining/19Kenji1/19Kenji1-mediumSquareAt3X.jpg"
+      },
+      {
+        "name": "Veggie burger",
+        "price": 13.99,
+        "url": "https://d2tia7vv3gtbtd.cloudfront.net/product_images/classic-beef-burgers/6109d794f23cef001717981c/zoom.jpg?c=1633697882"
+      },
+      {
+        "name": "Bean burger",
+        "price": 4.99,
+        "url": "https://minimalistbaker.com/wp-content/uploads/2015/01/Sweet-Potato-Black-Bean-Burger-SQUARE.jpg"
+      },
+      {
+        "name": "Cheesy Veggie Burger",
+        "price": 5.49,
+        "url": "https://www.kitchensanctuary.com/wp-content/uploads/2019/05/Cheesy-Veggie-Burger-Square-1200-300x300.jpg"
+      },
+      {
+        "name": "Beef and Black Bean Burgers",
+        "price": 4.00,
+        "url": "https://embed.widencdn.net/img/beef/ulr2uegjgl/exact/beef-and-black-bean-burger-square.tif?keep=c&u=7fueml"
+      },
+      {
+        "name": "Black Bean Burger",
+        "price": 3.25,
+        "url": "https://nutritionfacts.org/app/uploads/2017/11/BLACK-BEAN-BURGERS_photo-credit-Antonis-Achilleos-960x960.jpg"
+      },
+      {
+        "name": "Cheeseburger",
+        "price": 5.49,
+        "url": "https://bakeitwithlove.com/wp-content/uploads/2016/05/Teriyaki-Cheeseburger-lg-sq.jpg.webp"
+      },
+      {
+        "name": "Portobello Romesco Burgers",
+        "price": 3.99,
+        "url": "https://dishingouthealth.com/wp-content/uploads/2022/04/PortobelloBurgers_Square.jpg"
+      },
+      {
+        "name": "Mushroom Swiss Burgers ",
+        "price": 8.09,
+        "url": "https://i0.wp.com/www.mythreeseasons.com/wp-content/uploads/2021/08/mushroom-swiss-burger-square-1.jpg?fit=1200%2C1200&ssl=1"
+      },
+      {
+        "name": "Grilled Portobello Mushroom Burgers",
+        "price": 6.49,
+        "url": "https://www.mysequinedlife.com/wp-content/uploads/2022/07/portobello-mushroom-burger-1200-square.jpg"
+      }
+    ]
+  },
+  {
+    "name":"Pizza",
+    "address":"45 Colombo, Srilanka.",
+    "delivery_charge": 40,
+    "image":"https://static.toiimg.com/thumb/56933159.cms?imgsize=686279&width=800&height=800",
+
+    "hours":{
+      "Sunday":"11:00 AM - 7:00 PM",
+      "Monday":"10:00 AM - 10:00 PM",
+      "Tuesday":"10:00 AM - 10:00 PM",
+      "Wednesday":"10:00 AM - 8:00 PM",
+      "Thursday":"10:00 AM - 10:00 PM",
+      "Friday":"10:00 AM - 10:00 PM",
+      "Saturday":"9:00 AM - 1:00 PM"
+    },
+    "menus": [
+      {
+        "name": "Spicy Chicken Pizza",
+        "price": 2.99,
+        "url": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/216054.jpg?resize=1200:*"
+      },
+      {
+        "name": "Chicken Pizza",
+        "price": 3.59,
+        "url": "https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/Chicken-Pizza_exps30800_FM143298B03_11_8bC_RMS.jpg"
+      },
+      {
+        "name": "Meat Pizza",
+        "price": 5.44,
+        "url": "https://www.queensleeappetit.com/wp-content/uploads/2019/02/Meat-Lovers-Pizza-5-1-480x480.jpg"
+      },
+      {
+        "name": "Italian pizza",
+        "price": 2.00,
+        "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ70LWQ7UZwGNgurHveTM86EdmVGLYfzW_f4tXeXMtDuLJKs4nJgfRc3R3XO5AmlZDP9M&usqp=CAU"
+      },
+      {
+        "name": "Cheese Pizza",
+        "price": 3.49,
+        "url": "https://www.thecookierookie.com/wp-content/uploads/2019/01/soft-pretzel-crust-pizza-cheese-sauce-6-of-8-500x500.jpg"
+      },
+      {
+        "name": "Tortilla Pizza",
+        "price": 4.95,
+        "url": "https://freshaprilflours.com/wp-content/uploads/2021/10/tortilla-pizza-RECIPE-CARD-500x500.jpg"
+      },
+      {
+        "name": "Pepperoni Pizza",
+        "price": 3.59,
+        "url": "https://sipbitego.com/wp-content/uploads/2021/08/Pepperoni-Pizza-Recipe-Sip-Bite-Go.jpg"
+      },
+      {
+        "name": "Margherita Pizza",
+        "price": 5.49,
+        "url": "https://www.abeautifulplate.com/wp-content/uploads/2015/08/the-best-homemade-margherita-pizza-1-4-500x500.jpg"
+      },
+      {
+        "name": "Calzone",
+        "price": 3.99,
+        "url": "https://www.sipandfeast.com/wp-content/uploads/2022/08/calzone-recipe-snippet.jpg"
+      },
+      {
+        "name": "ITALIAN PEPPERONI PIZZA",
+        "price": 8.29,
+        "url": "https://worldlytreat.com/wp-content/uploads/2021/05/Italian-pepperoni-pizza-recipe-060-500x500.jpg"
+      },
+      {
+        "name": " White pizza ",
+        "price": 6.99,
+        "url": "https://www.modernhoney.com/wp-content/uploads/2019/05/The-Best-3-Cheese-White-Pizza-3.jpg"
+      }
+    ]
+  },
+  {
+    "name":"Juices",
+    "address":"109 Kandy Srilanka",
+    "delivery_charge": 5,
+    "image":"https://www.indianhealthyrecipes.com/wp-content/uploads/2021/12/orange-juice-recipe.jpg",
+    "hours":{
+      "Sunday":"11:00 AM - 7:00 PM",
+      "Monday":"10:00 AM - 10:00 PM",
+      "Tuesday":"10:00 AM - 10:00 PM",
+      "Wednesday":"10:00 AM - 8:00 PM",
+      "Thursday":"10:00 AM - 10:00 PM",
+      "Friday":"10:00 AM - 10:00 PM",
+      "Saturday":"9:00 AM - 2:00 PM"
+    },
+    "menus": [
+      {
+        "name": "Chocolate Shake",
+        "price": 4.95,
+        "url": "https://static.toiimg.com/photo/84170265.cms"
+      },
+      {
+        "name": "Strawberry Shake",
+        "price": 3.59,
+        "url": "https://www.allrecipes.com/thmb/3JB5nGgpQciN2JcQpkYcGMUQlPo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Delicious-Healthy-Strawberry-Shake-Yoly-2000-7a3028d448b743ffaa7a378a53cf6376.jpg"
+      },
+      {
+        "name": "Milkshake",
+        "price": 5.49,
+        "url": "https://bellewoodcottage.com/wp-content/uploads/2022/07/Milkshakes-Without-a-Blender-Mason-Jar-Milkshakes-9267-2-500x500.jpg"
+      },
+      {
+        "name": "Mango Milkshake",
+        "price": 3.99,
+        "url": "https://tastyoven.com/wp-content/uploads/2022/06/mango-shake-image-500x500.jpeg"
+      },
+      {
+        "name": "Shamrock Shake",
+        "price": 8.29,
+        "url": "https://hips.hearstapps.com/hmg-prod/images/delish-200908-shamrock-shake-005-ab-1629317331.jpg?crop=0.593xw:0.887xh;0.0929xw,0.113xh&resize=1200:*"
+      },
+      {
+        "name": "Fruit Smoothie",
+        "price": 6.99,
+        "url": "https://lilluna.com/wp-content/uploads/2014/02/fruit-smoothie-resize-8.jpg"
+      },
+      {
+        "name": "Frozen Fruit Smoothie",
+        "price": 3.99,
+        "url": "https://wholefoodsoulfoodkitchen.com/wp-content/uploads/2022/06/frozen-fruit-smoothie-no-yogurt.jpg"
+      },
+      {
+        "name": "Keto Protein Shake",
+        "price": 8.29,
+        "url": "https://lowcarbyum.com/wp-content/uploads/2020/09/keto-chocolate-frosty-recipe-sq.jpg"
+      },
+      {
+        "name": "CHOCOLATE MILK SHAKE",
+        "price": 6.99,
+        "url": "https://cafe007.lk/wp-content/uploads/2021/04/chocolate-milkshake.cJPG_.jpg"
+      }
+    ]
+  },
+  {
+    "name":"ShortEats",
+    "address":"87/A Colombo Srilanka",
+    "delivery_charge": 6,
+    "image":"https://i0.wp.com/magnificentsrilanka.com/wp-content/uploads/2021/01/Cutlets.png?resize=625%2C623&ssl=1",
+    "hours":{
+      "Sunday":"11:00 AM - 7:00 PM",
+      "Monday":"10:00 AM - 10:00 PM",
+      "Tuesday":"10:00 AM - 10:00 PM",
+      "Wednesday":"10:00 AM - 8:00 PM",
+      "Thursday":"10:00 AM - 10:00 PM",
+      "Friday":"10:00 AM - 10:00 PM",
+      "Saturday":"10:00 AM - 3:00 PM"
+    },
+    "menus": [
+      {
+        "name": "Chocolate Puff Pastry",
+        "price": 4.00,
+        "url": "https://www.marcellinaincucina.com/wp-content/uploads/2022/04/chocolate-pastry-puffs-5-2.jpg"
+      },
+      {
+        "name": "Fish Patties",
+        "price": 3.25,
+        "url": "https://www.dailyfoodrecipes.com/wp-content/uploads/2017/09/Sri-lankan-Fish-patties-10.jpg"
+      },
+      {
+        "name": "Cutlets",
+        "price": 5.49,
+        "url": "https://www.kannammacooks.com/wp-content/uploads/srilankan-jaffna-fish-cutlets-recipe-1.jpg"
+      },
+      {
+        "name": "Chicken Samosa",
+        "price": 3.99,
+        "url": "https://www.topsrilankanrecipe.com/wp-content/uploads/2019/04/21a.jpg"
+      },
+      {
+        "name": " Mutton roll  ",
+        "price": 8.09,
+        "url": "https://images.immediate.co.uk/production/volatile/sites/2/2021/02/Mutton-rolls-c70a28c.jpg?quality=90&crop=6px,1448px,2837px,1220px&resize=556,505"
+      },
+      {
+        "name": "Roti",
+        "price": 6.49,
+        "url": "https://www.sidechef.com/recipe/5a10d1ae-8a69-43e2-b95d-4db53f572a52.jpg?d=1408x1120"
+      }
+    ]
+  },
+  {
+    "name":"Sweets",
+    "address":"109 Kandy Srilanka",
+    "delivery_charge": 5,
+    "image":"https://www.theflavorbender.com/wp-content/uploads/2018/03/Sri-Lankan-Ribbon-Cake-The-Flavor-Bender-Featured-Image-SQ-8.jpg",
+    "hours":{
+      "Sunday":"11:00 AM - 7:00 PM",
+      "Monday":"10:00 AM - 10:00 PM",
+      "Tuesday":"10:00 AM - 10:00 PM",
+      "Wednesday":"10:00 AM - 8:00 PM",
+      "Thursday":"10:00 AM - 10:00 PM",
+      "Friday":"10:00 AM - 10:00 PM",
+      "Saturday":"9:00 AM - 2:00 PM"
+    },
+    "menus": [
+      {
+        "name": "Kalu Dodol",
+        "price": 4.95,
+        "url": "https://www.196flavors.com/wp-content/uploads/2018/02/kalu-dodol-1-FP.jpg"
+      },
+      {
+        "name": "Asmi",
+        "price": 3.59,
+        "url": "https://d39ltat5ucvvhk.cloudfront.net/uploads/images/img_1920x_5ed1c79d646457-13576522-22306589.jpg"
+      },
+      {
+        "name": "Sweet Soan Papdi",
+        "price": 5.49,
+        "url": "https://5.imimg.com/data5/FO/VB/MY-30312102/sweet-soan-papdi-500x500.jpg"
+      },
+      {
+        "name": "Kokis",
+        "price": 3.99,
+        "url": "https://www.196flavors.com/wp-content/uploads/2018/02/kokis-2-FP.jpg"
+      },
+      {
+        "name": "Coconut Ice",
+        "price": 8.29,
+        "url": "https://i.pinimg.com/236x/68/3d/f2/683df26b98146b997163df718d79cccb--sri-lanka-blog-page.jpg"
+      },
+      {
+        "name": "Pani Walalu",
+        "price": 6.99,
+        "url": "https://foodvoyageur.com/wp-content/uploads/2021/04/Pani-walalu12-1024x683-1-300x300.webp"
+      }
+    ]
+  }
+]

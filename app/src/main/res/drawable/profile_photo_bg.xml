@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<item>
+    <inset android:drawable="@drawable/baseline_add_a_photo_24"/>
+    <shape android:shape="oval">
+        <solid android:color="#e6e6e6"></solid>
+    </shape>
+
+
+</item>
+</selector>
