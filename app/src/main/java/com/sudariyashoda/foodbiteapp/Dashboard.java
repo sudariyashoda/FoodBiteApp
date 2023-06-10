@@ -112,6 +112,10 @@ public class Dashboard extends AppCompatActivity {
         Intent intent = new Intent(this, MapActivity.class);
         startActivity(intent);
         }
+        public void gotosupport(View view) {
+            Intent intent = new Intent(this, Support.class);
+            startActivity(intent);
+        }
 
         @Override
         protected void onResume() {
@@ -131,5 +135,4 @@ public class Dashboard extends AppCompatActivity {
             video.setVideoPath("android.resource://"+ getPackageName()+"/"+ R.raw.videoclipdash);
             video.start();
         }
-
 }

@@ -23,6 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:queryHint="Search location"
+        android:hint="Search Location Here"
         android:layout_marginBottom="16dp" />
 
 </RelativeLayout>

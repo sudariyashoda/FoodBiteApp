@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Support">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="127dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="16dp"
+        android:background="#FFFFFF"
+        android:scaleType="centerInside"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/foodbitelogo" />
+
+    <TextView
+        android:id="@+id/faq_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Frequently Asked Questions"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="408dp"
+        android:layout_height="265dp"
+        android:background="#52FF8839"
+        app:layout_constraintBottom_toTopOf="@+id/tutorials_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/faq_title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:paddingLeft="16dp"
+                android:paddingTop="8dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="8dp"
+                android:text="Q: How can I place an order?"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="A: To place an order, simply browse through our menu, select the items you want, and proceed to the checkout page. Fill in your delivery details and payment information to complete the order."
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:paddingLeft="16dp"
+                android:paddingTop="8dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="8dp"
+                android:text="Q: What payment options do you accept?"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="A: We accept various payment methods including credit/debit cards, mobile wallets, and cash on delivery. You can choose the preferred payment option during the checkout process."
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:paddingLeft="16dp"
+                android:paddingTop="8dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="8dp"
+                android:text="Q: How long does it take for the food to be delivered?"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="A: The delivery time depends on various factors such as your location, order volume, and current traffic conditions. We strive to deliver your food as quickly as possible, typically within 30-45 minutes."
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:paddingLeft="16dp"
+                android:paddingTop="8dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="8dp"
+                android:text="Q: Can I modify or cancel my order?"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="397dp"
+                android:layout_height="57dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="A: Yes, you can modify or cancel your order within a certain timeframe before it is being prepared. Please contact our customer support team at least 15 minutes before the scheduled delivery time to make any changes or cancellations."
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:paddingLeft="16dp"
+                android:paddingTop="8dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="8dp"
+                android:text="Q: Are there any discounts or promotions available?"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="A: Yes, we offer regular discounts and promotions. Keep an eye on our app's promotions section or subscribe to our newsletter to stay updated with the latest offers and deals."
+                android:textColor="#000000"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tutorials_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Step-by-Step Tutorials"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="400dp"
+        android:layout_height="203dp"
+        android:paddingStart="16sp"
+        android:paddingEnd="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/tutorials_title">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#E3E3E3"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="53dp"
+                    android:contentDescription="Step 1 Image"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/account" />
+
+                <TextView
+                    android:layout_width="166dp"
+                    android:layout_height="wrap_content"
+                    android:text="Create an Account"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="135dp"
+                    android:paddingTop="10dp"
+                    android:text="Users may be required to create an account or log in using their credentials. This step helps in maintaining user profiles, order history, and payment information."
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:paddingStart="5sp"
+                    android:paddingEnd="5sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="53dp"
+                    android:contentDescription="Step 1 Image"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/baseline_fastfood_24" />
+
+                <TextView
+                    android:layout_width="166dp"
+                    android:layout_height="wrap_content"
+                    android:text="Browse Foods "
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="135dp"
+                    android:paddingTop="10dp"
+                    android:text="  Users can browse through a list of available foods on the platform. They can view details such as cuisine type, ratings, reviews, and menu options."
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:paddingStart="5sp"
+                    android:paddingEnd="5sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#E3E3E3"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="53dp"
+                    android:contentDescription="Step 1 Image"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/baseline_payments_24" />
+
+                <TextView
+                    android:layout_width="166dp"
+                    android:layout_height="wrap_content"
+                    android:text="Select Payment Method"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="135dp"
+                    android:paddingTop="10dp"
+                    android:text=" Users choose their preferred payment method, which can include credit/debit cards, digital wallets, or cash on delivery. They may also have the option to save payment details for future orders."
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:paddingStart="5sp"
+                    android:paddingEnd="5sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="53dp"
+                    android:contentDescription="Step 1 Image"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/location" />
+
+                <TextView
+                    android:layout_width="166dp"
+                    android:layout_height="wrap_content"
+                    android:text="Place Order"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="135dp"
+                    android:paddingTop="10dp"
+                    android:text="Once all the necessary details are provided, users can confirm and place the order. At this point, the payment is processed, and the order is sent to the restaurant for preparation."
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:paddingStart="5sp"
+                    android:paddingEnd="5sp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#E3E3E3">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="53dp"
+                    android:contentDescription="Step 1 Image"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/tracking" />
+
+                <TextView
+                    android:layout_width="166dp"
+                    android:layout_height="wrap_content"
+                    android:text="Order Tracking"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="135dp"
+                    android:paddingTop="10dp"
+                    android:text="Users may have access to real-time order tracking, allowing them to monitor the status of their order and estimated delivery time."
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:paddingStart="5sp"
+                    android:paddingEnd="5sp"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+    <Button
+        android:id="@+id/contact_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Contact Support"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+
+    <Button
+        android:id="@+id/feedback_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Provide Feedback"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contact_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
