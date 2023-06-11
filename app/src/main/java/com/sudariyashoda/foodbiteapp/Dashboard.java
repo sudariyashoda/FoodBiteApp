@@ -22,11 +22,15 @@ import java.util.ArrayList;
 
 public class Dashboard extends AppCompatActivity {
 
-    // RecyclerView adapters and views
-    private RecyclerView.Adapter adapter, adapter2;
-    private RecyclerView recyclerViewCategory, recycleViewFastList;
+    // Adapter and RecyclerView variables for category list
+    private RecyclerView.Adapter adapter;
+    private RecyclerView recyclerViewCategory;
 
-    // Sensors
+    // Adapter and RecyclerView variables for fast delivery list
+    private RecyclerView.Adapter adapter2;
+    private RecyclerView recycleViewFastList;
+
+    // Accelerometer and Gyroscope objects
     private Accelerometer accelerometer;
     private Gyroscope gyroscope;
 
@@ -35,22 +39,22 @@ public class Dashboard extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
 
-        // Set up RecyclerViews
+        // Initialize the RecyclerViews
         recyclerViewCategory();
         recycleViewFastList();
 
-        // Initialize video player
+        // Initialize the video player
         initVideoPlayer();
 
-        // Initialize sensors
+        // Initialize the accelerometer and gyroscope
         accelerometer = new Accelerometer(this);
         gyroscope = new Gyroscope(this);
 
-        // Set listeners for sensor events
+        // Set listeners for accelerometer and gyroscope events
         accelerometer.setListner(new Accelerometer.Listner() {
             @Override
             public void onTranslation(float tx, float ty, float tz) {
-                // Change background color based on accelerometer values
+                // Change background color based on accelerometer translation values
                 if (tx > 1.0f) {
                     getWindow().getDecorView().setBackgroundColor(Color.parseColor("#e6ffff"));
                 } else if (tx < -1.0f) {
@@ -62,7 +66,7 @@ public class Dashboard extends AppCompatActivity {
         gyroscope.setListner(new Gyroscope.Listner() {
             @Override
             public void onRotation(float rx, float ry, float rz) {
-                // Change background color based on gyroscope values
+                // Change background color based on gyroscope rotation values
                 if (rz > 1.0f) {
                     getWindow().getDecorView().setBackgroundColor(Color.parseColor("#e6ffcc"));
                 } else if (rz < -1.0f) {
@@ -72,12 +76,13 @@ public class Dashboard extends AppCompatActivity {
         });
     }
 
-    // Set up RecyclerView for categories
+    // Set up the RecyclerView for category list
     private void recyclerViewCategory() {
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
         recyclerViewCategory = findViewById(R.id.recyclerView);
         recyclerViewCategory.setLayoutManager(linearLayoutManager);
 
+        // Create a list of category items
         ArrayList<CategoryDomain> categoryList = new ArrayList<>();
         categoryList.add(new CategoryDomain("Burger", "cat_1"));
         categoryList.add(new CategoryDomain("Pizza", "cat_2"));
@@ -86,53 +91,55 @@ public class Dashboard extends AppCompatActivity {
         categoryList.add(new CategoryDomain("Curries", "cat_5"));
         categoryList.add(new CategoryDomain("Sweets", "cat_6"));
 
+        // Create an adapter and set it to the RecyclerView
         adapter = new CategoryAdapter(categoryList);
         recyclerViewCategory.setAdapter(adapter);
     }
 
-    // Set up RecyclerView for fast delivery items
+    // Set up the RecyclerView for fast delivery list
     private void recycleViewFastList() {
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
         recycleViewFastList = findViewById(R.id.RecyclerView);
         recycleViewFastList.setLayoutManager(linearLayoutManager);
 
+        // Create a list of fast delivery items
         ArrayList<FastDeliveryDomain> fastDeliveryDomains = new ArrayList<>();
-
         fastDeliveryDomains.add(new FastDeliveryDomain("Mama's brownies", "fast_1"));
         fastDeliveryDomains.add(new FastDeliveryDomain("Cup cakes", "fast_2"));
         fastDeliveryDomains.add(new FastDeliveryDomain("Fresh juice", "fast_3"));
         fastDeliveryDomains.add(new FastDeliveryDomain("Burger King", "fast_4"));
         fastDeliveryDomains.add(new FastDeliveryDomain("SeaFood", "fast_5"));
 
+        // Create an adapter and set it to the RecyclerView
         adapter2 = new FastDeliveryAdapter(fastDeliveryDomains);
         recycleViewFastList.setAdapter(adapter2);
     }
 
-    // Button click event to navigate to food list activity
+    // Start FoodListActivity
     public void gotodetailsview(View view) {
         Intent intent = new Intent(this, FoodListActivity.class);
         startActivity(intent);
     }
 
-    // Button click event to navigate to cart activity
+    // Start PlaceYourOrderActivity
     public void gotocart(View view) {
         Intent intent = new Intent(this, PlaceYourOrderActivity.class);
         startActivity(intent);
     }
 
-    // Button click event to navigate to profile activity
+    // Start Profile activity
     public void gotoprofile(View view) {
         Intent intent = new Intent(this, Profile.class);
         startActivity(intent);
     }
 
-    // Button click event to navigate to map activity
+    // Start MapActivity
     public void gotomap(View view) {
         Intent intent = new Intent(this, MapActivity.class);
         startActivity(intent);
     }
 
-    // Button click event to navigate to support activity
+    // Start Support activity
     public void gotosupport(View view) {
         Intent intent = new Intent(this, Support.class);
         startActivity(intent);
@@ -141,7 +148,7 @@ public class Dashboard extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        // Register sensors on resume
+        // Register accelerometer and gyroscope listeners
         accelerometer.register();
         gyroscope.register();
     }
@@ -149,7 +156,7 @@ public class Dashboard extends AppCompatActivity {
     @Override
     protected void onPause() {
         super.onPause();
-        // Unregister sensors on pause
+        // Unregister accelerometer and gyroscope listeners
         accelerometer.unegister();
         gyroscope.unegister();
     }

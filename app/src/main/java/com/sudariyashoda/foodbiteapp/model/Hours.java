@@ -7,6 +7,7 @@ import java.util.Locale;
 
 public class Hours {
 
+    // Variables to store opening hours for each day of the week
     String Sunday;
     String Monday;
     String Tuesday;
@@ -14,6 +15,8 @@ public class Hours {
     String Thursday;
     String Friday;
     String Saturday;
+
+    // Getter and Setter methods for each day's opening hours
 
     public String getSunday() {
         return Sunday;
@@ -71,10 +74,14 @@ public class Hours {
         Saturday = saturday;
     }
 
+    // Method to get the opening hours for the current day
     public String getTodaysHours() {
+        // Get the current date and time
         Calendar calendar = Calendar.getInstance();
-        Date date  = calendar.getTime();
+        Date date = calendar.getTime();
+        // Format the date to get the day of the week
         String day = new SimpleDateFormat("EEEE", Locale.ENGLISH).format(date.getTime());
+        // Return the opening hours based on the current day
         switch (day) {
             case "Sunday":
                 return this.Sunday;
@@ -92,7 +99,6 @@ public class Hours {
                 return this.Saturday;
             default:
                 return this.Sunday;
-
         }
     }
 }

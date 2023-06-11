@@ -4,10 +4,10 @@ import android.os.Parcel;
 import android.os.Parcelable;
 
 public class Menu implements Parcelable {
-    private String name;
-    private float price;
-    private int totalInCart;
-    private String url;
+    private String name;            // Name of the menu item
+    private float price;            // Price of the menu item
+    private int totalInCart;        // Total quantity of the menu item in the shopping cart
+    private String url;             // URL of the menu item image
 
     public int getTotalInCart() {
         return totalInCart;
@@ -17,6 +17,7 @@ public class Menu implements Parcelable {
         this.totalInCart = totalInCart;
     }
 
+    // Constructor for creating a Menu object from a Parcel
     protected Menu(Parcel in) {
         name = in.readString();
         price = in.readFloat();
@@ -24,6 +25,7 @@ public class Menu implements Parcelable {
         totalInCart = in.readInt();
     }
 
+    // Creator constant for generating instances of the Menu class from a Parcel
     public static final Creator<Menu> CREATOR = new Creator<Menu>() {
         @Override
         public Menu createFromParcel(Parcel in) {
@@ -65,6 +67,7 @@ public class Menu implements Parcelable {
         return 0;
     }
 
+    // Write object data to a Parcel
     @Override
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeString(name);

@@ -2,17 +2,16 @@ package com.sudariyashoda.foodbiteapp.model;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-
 import java.util.List;
 
 public class RestaurantModel implements Parcelable {
 
-    private String name;
-    private String address;
-    private String image;
-    private float delivery_charge;
-    private Hours hours;
-    private List<Menu> menus;
+    private String name;  // Name of the restaurant
+    private String address;  // Address of the restaurant
+    private String image;  // Image URL of the restaurant
+    private float delivery_charge;  // Delivery charge of the restaurant
+    private Hours hours;  // Operating hours of the restaurant
+    private List<Menu> menus;  // List of menus available at the restaurant
 
     public String getName() {
         return name;
@@ -61,6 +60,8 @@ public class RestaurantModel implements Parcelable {
     public void setMenus(List<Menu> menus) {
         this.menus = menus;
     }
+
+    // Parcelable implementation
 
     protected RestaurantModel(Parcel in) {
         name = in.readString();
